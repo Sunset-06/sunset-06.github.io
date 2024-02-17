@@ -1,0 +1,228 @@
+* {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+
+body{
+    background-size: cover;
+	background-attachment: fixed;
+    font-family: "Figtree", sans-serif;
+    background: linear-gradient(to left, #283c86, #45a247);
+    margin: 0;
+}
+
+/*navbar stuff*/
+.navbar{
+    background-color: #F4F9FD;
+    position: fixed;
+    top: 0;
+    height: 4em;
+    width: 100vw;
+    z-index: 99;
+}
+
+
+.navbar a {
+	float: right;
+	color: black;
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 17px;
+	margin: 14px 25px 14px 10px;
+}     
+
+.navbar a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width .3s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.navbar .exter{
+	float: left;
+	color: black;
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 17px;
+	margin: 10px -10px 10px 20px;
+}
+
+.exter img{
+	height: 19px;
+	width: 19px;
+}
+
+/*pages*/
+h2{
+    margin-top: 2em;
+    justify-self: center;
+    opacity:0;
+}
+
+h2.trig{
+    animation-name: appear;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+p{
+    align-self: center;
+    text-align: center;
+    animation-delay: 2s;
+    margin: 1em 2em 1em 2em;
+}
+
+p.trig{
+    animation-name: appear;
+    animation-duration: 0.5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+#home {
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color:aliceblue;
+    font-size: 200%;
+    height: 100vh;
+    width: 99%;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.but1{
+    text-align: center;
+    background-color:  #15a30b ;
+    color: aliceblue;
+    width:7em;
+    padding: 12px;
+    font-size: 17px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.but1::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: aliceblue;
+    transition: width .3s;
+}
+
+.but1:hover::after {
+    width: 100%;
+    transition: width .3s;
+} 
+
+#about {
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:aliceblue;
+    font-size: 200%;
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 50px;
+    scroll-snap-stop: always;
+}
+
+#edu {
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:aliceblue;
+    font-size: 200%;
+    height: 100vh;
+    width: 100%;
+    scroll-snap-stop: always;
+}
+
+.eduboxbishops{
+    display: flex;
+    width: 50%;
+    height: 90%;
+    flex-direction: column;
+    border: 5px solid aliceblue;
+    margin: 20px;
+    background-image: linear-gradient(rgba(26,25,25,0.5), rgba(26, 25, 25, 0.5)), url("/img/TBS_Camp.jpeg");
+    background-size: cover;
+}
+
+.eduboxsrm{
+    display: flex;
+    width: 50%;
+    height: 90%;
+    flex-direction: column;
+    border: 5px solid aliceblue;
+    margin: 20px;
+    background-image: linear-gradient(rgba(26,25,25,0.5), rgba(26, 25, 25, 0.5)), url("/img/SRM_Ramapuram.jpg");
+    background-size:cover;
+}
+
+#skills {
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    color:aliceblue;
+    font-size: 200%;
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 50px;
+    scroll-snap-stop: always;
+}
+
+.sklgrid{
+    display: grid ;
+    justify-content: center;
+    margin-top: 5em;
+    grid-template-columns: 7em 7em 7em 7em;
+    grid-template-rows: 7em 7em 7em 7em;
+    align-items: center;
+}
+
+.sklbox{
+    border: 2px solid aliceblue;
+}
+
+#contact {
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    color:aliceblue;
+    font-size: 200%;
+    height: 100vh;
+    width: 100%;
+    scroll-snap-stop: always;
+}
+
+#footer{
+    display:flex;
+    background-color: black;
+    align-self: flex-end;
+    color: #F4F9FD;
+    border-radius: 25%;
+    width:500px;
+}
+
+@keyframes appear {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
