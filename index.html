@@ -11,14 +11,14 @@
 <body>
 
   <div class="navbar">
-    <a class="exter" href="/Download.txt"> download my resume</a>
+    <a class="exter" href="assets/Nilay_Resume.pdf"> download my resume</a>
     <a class="exter" href="https://www.linkedin.com/in/nilay06/" target="_blank" rel="noopener noreferrer"><box-icon name="linkedin-square" type="logo" color="black"></boxicon></a></a>
     <a class="exter" href="https://github.com/Sunset-06"target="_blank" rel="noopener noreferrer"><box-icon name="github" type="logo" color="black"></boxicon></a>
 
     <a class="inter" href="#skills">skills</a>
     <a class="inter" href="#edu">education</a>
     <a class="inter" href="#about">about</a>
-    <a class="inter" class="active" href="#home">home</a>
+    <a class="inter" href="#home">home</a>
   </div>
 
     <div id="home">
@@ -28,17 +28,19 @@
 
     <div id="about">
       <h2>about</h2>
-      <p>Hi! I'm Nilay, a passionate student with an interest in software development and a love for learning new technologies, for fun, even if it doesn't have a usecase.</p>
-      <p>Currently, I'm pursuing my bachelors degree at SRMIST Ramapuram. I enjoy working on a diverse range of projects, but am most confident about my skills with Java, C++ and Web Development.</p>
-      <p>I am excited to continue learning newer technologies and expanding my skills. While I do that, Let's connect and see what the future has in store for us.</p>
+      <div class="content">
+        <p>Hi! I'm Nilay, a passionate student with an interest in software development and a love for learning new technologies, for fun, even if it doesn't have a usecase.</p>
+        <p>Currently, I'm pursuing my bachelors degree at SRMIST Ramapuram. I enjoy working on a diverse range of projects, but am most confident about my skills with Java, C++ and Web Development. I recommend checking out my GitHub and LinkedIn profiles for more information.</p>
+        <p>I am excited to continue learning newer technologies and expanding my skills. While I do that, Let's connect and see what the future has in store for us.</p>
+      </div>
     </div>
-    
+
     <div id="edu">
       <h2>education</h2>
-      <div style="display: flex; flex: row wrap;">
+      <div class="content">
         <div class="eduboxbishops">
           <p>The Bishop's School, Camp</p>
-          <p>I completed my Higher Secondary from the Bishop's School Camp, and was a student there from 2009 upto 2023.</p>
+          <p>I completed my Higher Secondary from the Bishop's School, Camp, in Pune and was a student there from 2009 upto 2023.</p>
         </div>
         <div class="eduboxsrm">
           <p>SRMIST, Ramapuram</p>
@@ -49,22 +51,29 @@
 
     <div id="skills">
       <h2>skills</h2>
-      <div class="sklgrid">
-        <div class="sklbox">Java</div>
-        <div class="sklbox">C++</div>
-        <div class="sklbox">JavaScript</div>
-        <div class="sklbox">HTML</div>
-        <div class="sklbox">CSS</div>
-        <div class="sklbox">Python</div>
+      <div class="content">
+        <div id="sklbox" class="sklJava">Java</div>
+        <div id="sklbox" class="sklCPP">C++</div>
+        <div id="sklbox" class="sklJS">JavaScript</div>
+        <div id="sklbox" class="sklC">C</div>
+        <div id="sklbox" class="sklPy">Python</div>
+        <div id="sklbox" class="sklHTML">HTML</div>
+        <div id="sklbox" class="sklCSS">CSS</div>
+        <div id="sklbox" class="sklMore">More to Come</div>
       </div>
     </div>
 
     <div id="contact">
       <h2>get in touch</h2>
+      <div class="content">
+        <p>Contact me through these accounts:</p>
+        <a href="mailto:nilay.sabnis05@gmail.com"><box-icon name="envelope" color="white"></box-icon><!--img src="/img/Gmail_icon.png" alt="Gmail"-->nilay.sabnis05@gmail.com</a>
+        <a href="https://www.instagram.com/nilsy_05/"><box-icon name="instagram" type="logo" color="white"></box-icon><!--img src="/img/Instagram_icon.png" alt="Instagram"-->@nilsy_05</a>
+      </div>
     </div>
-
+    
     <div id="footer">
-      <p>This is a footer</p>
+      <p>thank you for visiting my site. | © 2024</p>
     </div>
   <script src="script.js"></script>
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>

@@ -11,13 +11,13 @@ let i=0;
 window.addEventListener("scroll",animtrig);
 
 function animtrig(){
+        if(i>3)
+            return;
         let trig=document.getElementById(arr[i]);
         let rect=trig.getBoundingClientRect();
-        //console.log(rect);
         if(rect.top<3){
             document.querySelector(`#${arr[i]} > h2`).classList.add("trig");
-            document.querySelectorAll(`#${arr[i]} > p`).classList.add("trig");
-            console.log(trig.innerHTML);
+            document.querySelector(`#${arr[i]} > .content`).classList.add("trig");
             i++;   
         }
 }
