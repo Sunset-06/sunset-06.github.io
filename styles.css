@@ -208,7 +208,7 @@ p.trig{
     border: 5px solid aliceblue;
     border-radius: 10px;
     margin: 20px;
-    background-image: linear-gradient(rgba(26,25,25,0.5), rgba(26, 25, 25, 0.5)), url("assets/TBS_Camp.jpeg");
+    background-image: linear-gradient(rgba(26,25,25,0.5), rgba(26, 25, 25, 0.5)), url("./assets/TBS_Camp.jpeg");
     background-size: cover;
 }
 
@@ -221,7 +221,7 @@ p.trig{
     border: 5px solid aliceblue;
     border-radius: 10px;
     margin: 20px;
-    background-image: linear-gradient(rgba(26,25,25,0.5), rgba(26, 25, 25, 0.5)), url("assets/SRM_Ramapuram.jpg");
+    background-image: linear-gradient(rgba(26,25,25,0.5), rgba(26, 25, 25, 0.5)), url("./assets/SRM_Ramapuram.jpg");
     background-size:cover;
 }
 
@@ -268,25 +268,25 @@ p.trig{
 }
 
 .sklJava{
-    background-image: linear-gradient(rgba(16, 15, 15, 0.5), rgba(16, 15, 15, 0.5)), url("assets/Java_logo.png") ;
+    background-image: linear-gradient(rgba(16, 15, 15, 0.5), rgba(16, 15, 15, 0.5)), url("./assets/Java_logo.png") ;
 }
 .sklCPP{
-    background-image: linear-gradient(rgba(16,15,15,0.5), rgba(16, 15, 15, 0.5)), url("assets/C++_Logo.png") ;
+    background-image: linear-gradient(rgba(16,15,15,0.5), rgba(16, 15, 15, 0.5)), url("./assets/C++_Logo.png") ;
 }
 .sklJS{
-    background-image: linear-gradient(rgba(16,15,15,0.5), rgba(16, 15, 15, 0.5)), url("assets/JavaScript-logo.png") ;
+    background-image: linear-gradient(rgba(16,15,15,0.5), rgba(16, 15, 15, 0.5)), url("./assets/JavaScript-logo.png") ;
 }
 .sklC{
-    background-image: linear-gradient(rgba(16,15,15,0.5), rgba(16, 15, 15, 0.5)), url("assets/C_Logo.png") ;
+    background-image: linear-gradient(rgba(16,15,15,0.5), rgba(16, 15, 15, 0.5)), url("./assets/C_Logo.png") ;
 }
 .sklHTML{
-    background-image: linear-gradient(rgba(16,15,15,0.5), rgba(16, 15, 15, 0.5)), url("assets/HTML5_Badge.png") ;
+    background-image: linear-gradient(rgba(16,15,15,0.5), rgba(16, 15, 15, 0.5)), url("./assets/HTML5_Badge.png") ;
 }
 .sklCSS{
-    background-image: linear-gradient(rgba(16,15,15,0.5), rgba(16, 15, 15, 0.5)), url("assets/CSS3_logo.png") ;
+    background-image: linear-gradient(rgba(16,15,15,0.5), rgba(16, 15, 15, 0.5)), url("./assets/CSS3_logo.png") ;
 }
 .sklPy{
-    background-image: linear-gradient(rgba(16,15,15,0.5), rgba(16, 15, 15, 0.0)), url("assets/Python_Logo.png") ;
+    background-image: linear-gradient(rgba(16,15,15,0.5), rgba(16, 15, 15, 0.0)), url("./assets/Python_Logo.png") ;
 }
 .sklMore{
     background-image: linear-gradient(rgba(16,15,15,0.5), rgba(16, 15, 15, 0.0));
@@ -294,31 +294,31 @@ p.trig{
 
 
 .sklJava:hover {
-    background-image: linear-gradient(rgba(16, 15, 15, 0.3), rgba(16, 15, 15, 0.0)), url("assets/Java_logo.png") ;
+    background-image: linear-gradient(rgba(16, 15, 15, 0.3), rgba(16, 15, 15, 0.0)), url("./assets/Java_logo.png") ;
     color: transparent;
 }
 .sklCPP:hover {
-    background-image: linear-gradient(rgba(16,15,15,0.3), rgba(16, 15, 15, 0.0)), url("assets/C++_Logo.png") ;
+    background-image: linear-gradient(rgba(16,15,15,0.3), rgba(16, 15, 15, 0.0)), url("./assets/C++_Logo.png") ;
     color: transparent;
 }
 .sklJS:hover {
-    background-image: linear-gradient(rgba(16,15,15,0.3), rgba(16, 15, 15, 0.0)), url("assets/JavaScript-logo.png") ;
+    background-image: linear-gradient(rgba(16,15,15,0.3), rgba(16, 15, 15, 0.0)), url("./assets/JavaScript-logo.png") ;
     color: transparent;
 }
 .sklC:hover {
-    background-image: linear-gradient(rgba(16,15,15,0.3), rgba(16, 15, 15, 0.0)), url("assets/C_Logo.png") ;
+    background-image: linear-gradient(rgba(16,15,15,0.3), rgba(16, 15, 15, 0.0)), url("./assets/C_Logo.png") ;
     color: transparent;
 }
 .sklHTML:hover {
-    background-image: linear-gradient(rgba(16,15,15,0.3), rgba(16, 15, 15, 0.0)), url("assets/HTML5_Badge.png") ;
+    background-image: linear-gradient(rgba(16,15,15,0.3), rgba(16, 15, 15, 0.0)), url("./assets/HTML5_Badge.png") ;
     color: transparent;
 }
 .sklCSS:hover {
-    background-image: linear-gradient(rgba(16,15,15,0.3), rgba(16, 15, 15, 0.0)), url("assets/CSS3_logo.png") ;
+    background-image: linear-gradient(rgba(16,15,15,0.3), rgba(16, 15, 15, 0.0)), url("./assets/CSS3_logo.png") ;
     color: transparent;
 }
 .sklPy:hover {
-    background-image: linear-gradient(rgba(16,15,15,0.3), rgba(16, 15, 15, 0.0)), url("assets/Python_Logo.png") ;
+    background-image: linear-gradient(rgba(16,15,15,0.3), rgba(16, 15, 15, 0.0)), url("./assets/Python_Logo.png") ;
     color: transparent;
 }
 
