@@ -6,6 +6,11 @@ if (history.scrollRestoration) {
     }
 }
 
+setTimeout( ()=>{
+    document.querySelector("body").classList.remove("scrblock");
+  }
+,2500);
+
 const arr=["about","edu","skills","contact"];
 let i=0;
 window.addEventListener("scroll",animtrig);

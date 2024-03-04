@@ -14,23 +14,18 @@ body{
     background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
     margin: 0;
 }
-hr{
-    color: aliceblue;
-    height: 1px;
-    width: 80%;
-    z-index: 99;
-}
 
 /*navbar*/
 .navbar{
     background-color: aliceblue;
     position: fixed;
-    top: 0;
+    top: -4em;
     height: 4em;
     width: 100vw;
+    animation: slide 1s 2s forwards;
     z-index: 99;
+    transition: 2s;
 }
-
 
 .navbar a {
 	float: right;
@@ -75,9 +70,12 @@ hr{
 h1{
     font-style: normal;
     font-weight: normal;
-    opacity: 0;
-    animation: appear 1s 1s;
-    animation-fill-mode: forwards;
+    background-image: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
+    background-clip: text;
+    color: transparent; 
+    opacity: 1;
+    animation: colourchange 1s ease-in-out 1s forwards;
+    justify-self: center;
 }
 
 h2{
@@ -89,9 +87,7 @@ h2{
 }
 
 h2.trig{
-    animation-name: appear;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
+    animation: appear 0.5s forwards;
 }
 
 p{
@@ -113,7 +109,6 @@ p.trig{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    color:aliceblue;
     font-size: 200%;
     height: 100vh;
     width: 99%;
@@ -125,10 +120,13 @@ p.trig{
     content: '';
     position: absolute;
     top: 0; bottom: 0; left: 0; right: 0;
-    background: linear-gradient(135deg, #355C7D 0%, #C06C84 100%);
-    animation: movegrad 1.5s ease-in-out 0s;
-    animation-fill-mode: forwards;
+    background: black;
+    animation: movegrad 1s ease-in-out 1s forwards;
     z-index: -1;
+}
+
+.scrblock{
+    overflow: hidden;
 }
 
 .but1{
@@ -141,7 +139,7 @@ p.trig{
     padding: 12px;
     width: 7em;
     opacity: 0;
-    animation: appear 1s 1s;
+    animation: appear 0.5s ease-in 2.5s;
     animation-fill-mode: forwards;
     transition: all 0.5s;
   }
@@ -168,11 +166,10 @@ p.trig{
 }
 
 #about div.content.trig{
-    animation-name: appear;
-    animation-duration: 0.5s;
-    animation-delay: 0.3s;
-    animation-fill-mode: forwards;
+    color: aliceblue;
+    animation: appear 0.5s 0.3s forwards;
 }
+
 #edu {
     scroll-snap-align: start;
     display: flex;
@@ -193,35 +190,33 @@ p.trig{
 }
 
 #edu div.content.trig{
-    animation-name: appear;
-    animation-duration: 0.5s;
-    animation-delay: 0.3s;
-    animation-fill-mode: forwards;
+    color: aliceblue;
+    animation: appear 0.5s 0.3s forwards;
 }
 
 .eduboxbishops{
     display: flex;
     width: 40%;
-    min-width: 360px;
+    min-width: 350px;
     height: 90%;
     flex-direction: column;
     border: 5px solid aliceblue;
     border-radius: 10px;
     margin: 20px;
-    background-image: linear-gradient(rgba(26,25,25,0.5), rgba(26, 25, 25, 0.5)), url("./assets/TBS_Camp.jpeg");
+    background-image: linear-gradient(rgba(26,25,25,0.5), rgba(26, 25, 25, 0.5)), url("/assets/TBS_Camp.jpeg");
     background-size: cover;
 }
 
 .eduboxsrm{
     display: flex;
     width: 40%;
-    min-width: 360px;
+    min-width: 350px;
     height: 90%;
     flex-direction: column;
     border: 5px solid aliceblue;
     border-radius: 10px;
     margin: 20px;
-    background-image: linear-gradient(rgba(26,25,25,0.5), rgba(26, 25, 25, 0.5)), url("./assets/SRM_Ramapuram.jpg");
+    background-image: linear-gradient(rgba(26,25,25,0.5), rgba(26, 25, 25, 0.5)), url("/assets/SRM_Ramapuram.jpg");
     background-size:cover;
 }
 
@@ -249,10 +244,8 @@ p.trig{
 }
 
 #skills div.content.trig{
-    animation-name: appear;
-    animation-duration: 0.5s;
-    animation-delay: 0.3s;
-    animation-fill-mode: forwards;
+    color: aliceblue;
+    animation: appear 0.5s 0.3s forwards;
 }
 
 #sklbox{
@@ -268,25 +261,25 @@ p.trig{
 }
 
 .sklJava{
-    background-image: linear-gradient(rgba(16, 15, 15, 0.5), rgba(16, 15, 15, 0.5)), url("./assets/Java_logo.png") ;
+    background-image: linear-gradient(rgba(16, 15, 15, 0.5), rgba(16, 15, 15, 0.5)), url("/assets/Java_logo.png") ;
 }
 .sklCPP{
-    background-image: linear-gradient(rgba(16,15,15,0.5), rgba(16, 15, 15, 0.5)), url("./assets/C++_Logo.png") ;
+    background-image: linear-gradient(rgba(16,15,15,0.5), rgba(16, 15, 15, 0.5)), url("/assets/C++_Logo.png") ;
 }
 .sklJS{
-    background-image: linear-gradient(rgba(16,15,15,0.5), rgba(16, 15, 15, 0.5)), url("./assets/JavaScript-logo.png") ;
+    background-image: linear-gradient(rgba(16,15,15,0.5), rgba(16, 15, 15, 0.5)), url("/assets/JavaScript-logo.png") ;
 }
 .sklC{
-    background-image: linear-gradient(rgba(16,15,15,0.5), rgba(16, 15, 15, 0.5)), url("./assets/C_Logo.png") ;
+    background-image: linear-gradient(rgba(16,15,15,0.5), rgba(16, 15, 15, 0.5)), url("/assets/C_Logo.png") ;
 }
 .sklHTML{
-    background-image: linear-gradient(rgba(16,15,15,0.5), rgba(16, 15, 15, 0.5)), url("./assets/HTML5_Badge.png") ;
+    background-image: linear-gradient(rgba(16,15,15,0.5), rgba(16, 15, 15, 0.5)), url("/assets/HTML5_Badge.png") ;
 }
 .sklCSS{
-    background-image: linear-gradient(rgba(16,15,15,0.5), rgba(16, 15, 15, 0.5)), url("./assets/CSS3_logo.png") ;
+    background-image: linear-gradient(rgba(16,15,15,0.5), rgba(16, 15, 15, 0.5)), url("/assets/CSS3_logo.png") ;
 }
 .sklPy{
-    background-image: linear-gradient(rgba(16,15,15,0.5), rgba(16, 15, 15, 0.0)), url("./assets/Python_Logo.png") ;
+    background-image: linear-gradient(rgba(16,15,15,0.5), rgba(16, 15, 15, 0.0)), url("/assets/Python_Logo.png") ;
 }
 .sklMore{
     background-image: linear-gradient(rgba(16,15,15,0.5), rgba(16, 15, 15, 0.0));
@@ -294,31 +287,31 @@ p.trig{
 
 
 .sklJava:hover {
-    background-image: linear-gradient(rgba(16, 15, 15, 0.3), rgba(16, 15, 15, 0.0)), url("./assets/Java_logo.png") ;
+    background-image: linear-gradient(rgba(16, 15, 15, 0.3), rgba(16, 15, 15, 0.0)), url("/assets/Java_logo.png") ;
     color: transparent;
 }
 .sklCPP:hover {
-    background-image: linear-gradient(rgba(16,15,15,0.3), rgba(16, 15, 15, 0.0)), url("./assets/C++_Logo.png") ;
+    background-image: linear-gradient(rgba(16,15,15,0.3), rgba(16, 15, 15, 0.0)), url("/assets/C++_Logo.png") ;
     color: transparent;
 }
 .sklJS:hover {
-    background-image: linear-gradient(rgba(16,15,15,0.3), rgba(16, 15, 15, 0.0)), url("./assets/JavaScript-logo.png") ;
+    background-image: linear-gradient(rgba(16,15,15,0.3), rgba(16, 15, 15, 0.0)), url("/assets/JavaScript-logo.png") ;
     color: transparent;
 }
 .sklC:hover {
-    background-image: linear-gradient(rgba(16,15,15,0.3), rgba(16, 15, 15, 0.0)), url("./assets/C_Logo.png") ;
+    background-image: linear-gradient(rgba(16,15,15,0.3), rgba(16, 15, 15, 0.0)), url("/assets/C_Logo.png") ;
     color: transparent;
 }
 .sklHTML:hover {
-    background-image: linear-gradient(rgba(16,15,15,0.3), rgba(16, 15, 15, 0.0)), url("./assets/HTML5_Badge.png") ;
+    background-image: linear-gradient(rgba(16,15,15,0.3), rgba(16, 15, 15, 0.0)), url("/assets/HTML5_Badge.png") ;
     color: transparent;
 }
 .sklCSS:hover {
-    background-image: linear-gradient(rgba(16,15,15,0.3), rgba(16, 15, 15, 0.0)), url("./assets/CSS3_logo.png") ;
+    background-image: linear-gradient(rgba(16,15,15,0.3), rgba(16, 15, 15, 0.0)), url("/assets/CSS3_logo.png") ;
     color: transparent;
 }
 .sklPy:hover {
-    background-image: linear-gradient(rgba(16,15,15,0.3), rgba(16, 15, 15, 0.0)), url("./assets/Python_Logo.png") ;
+    background-image: linear-gradient(rgba(16,15,15,0.3), rgba(16, 15, 15, 0.0)), url("/assets/Python_Logo.png") ;
     color: transparent;
 }
 
@@ -342,10 +335,8 @@ p.trig{
 }
 
 #contact div.content.trig{
-    animation-name: appear;
-    animation-duration: 0.5s;
-    animation-delay: 0.3s;
-    animation-fill-mode: forwards;
+    color: aliceblue;
+    animation: appear 0.5s 0.3s forwards;
 }
 
 #contact a{
@@ -359,10 +350,8 @@ p.trig{
     padding: 12px;
     width: 20em;
     opacity: 0;
-    animation: appear 1s 1s;
-    animation-fill-mode: forwards;
+    animation: appear 1s 1s forwards;
     transition: all 0.5s;
-
 }
 
 #contact a:hover{
@@ -380,17 +369,38 @@ p.trig{
     scroll-snap-stop: always;
 }
 
+#footer a{
+    border-radius: 10px;
+    border: 2px solid rgb(104, 107, 110);
+    text-align: center;
+    text-decoration: none;
+    width: 25px;
+    height: 25px;
+    transition: 0.5s;
+}
+
+#footer a:hover{
+    border: 2px solid aliceblue;
+}
+
 /*animations*/
+
+@keyframes slide{
+    0%{top: -4em}
+    100%{top: 0em}
+}
+
 @keyframes movegrad {
-    0%{opacity: 1.0}
-    100%{opacity: 0.0}
+    0%{opacity: 1}
+    100%{opacity: 0}
 }
 
 @keyframes appear {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@keyframes colourchange{
+    0%{color: transparent}
+    100%{color: aliceblue}
 }
