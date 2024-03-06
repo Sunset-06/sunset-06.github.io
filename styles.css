@@ -96,13 +96,6 @@ p{
     margin: 1em 2em 1em 2em;
 }
 
-p.trig{
-    animation-name: appear;
-    animation-duration: 0.5s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-}
-
 /*sections*/
 #home {
     scroll-snap-align: start;
