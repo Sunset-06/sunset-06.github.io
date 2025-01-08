@@ -1,399 +1,186 @@
-* {
-    scroll-snap-type: y mandatory;
-    @media screen and (max-width:1120px){
-        scroll-snap-type: none;
-    }
-    scroll-behavior: smooth;
-  }
-
 body{
-    background-size: cover;
-	background-attachment: fixed;
-    font-family: "Figtree", sans-serif;
-    background: #355C7D;
-    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
-    margin: 0;
-}
-
-/*navbar*/
-.navbar{
-    background-color: aliceblue;
-    position: fixed;
-    top: -4em;
-    height: 4em;
-    width: 100vw;
-    animation: slide 1s 2s forwards;
-    z-index: 99;
-    transition: 2s;
-}
-
-.navbar a {
-	float: right;
-	color: black;
-	text-align: center;
-	padding: 12px;
-	text-decoration: none;
-	font-size: 17px;
-	margin: 14px 25px 14px 10px;
-}     
-
-.navbar a::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: black;
-    transition: width .3s;
-}
-
-.navbar a:hover::after {
-    width: 100%;
-    transition: width .3s;
-}
-
-.navbar .exter{
-	float: left;
-	color: black;
-	text-align: center;
-	padding: 12px;
-	text-decoration: none;
-	font-size: 17px;
-	margin: 10px -10px 10px 20px;
-}
-
-.exter img{
-	height: 19px;
-	width: 19px;
-}
-
-/*content*/
-h1{
-    font-style: normal;
-    font-weight: normal;
-    background-image: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
-    background-clip: text;
-    color: transparent; 
-    opacity: 1;
-    animation: colourchange 1s ease-in-out 1s forwards;
-    justify-self: center;
-}
-
-h2{
-    margin-top: 2em;
-    opacity:0;
-    align-self: center;
-    font-style: normal;
-    font-weight: normal;
-}
-
-h2.trig{
-    animation: appear 0.5s forwards;
-}
-
-p{
-    align-self: center;
-    text-align: center;
-    margin: 1em 2em 1em 2em;
-}
-
-/*sections*/
-#home {
-    scroll-snap-align: start;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 200%;
-    height: 100vh;
-    width: 99%;
-    align-items: center;
-    margin-bottom: 50px;
-}
-
-#home:before {
-    content: '';
-    position: absolute;
-    top: 0; bottom: 0; left: 0; right: 0;
-    background: black;
-    animation: movegrad 1s ease-in-out 1s forwards;
-    z-index: -1;
-}
-
-.scrblock{
-    overflow: hidden;
-}
-
-.but1{
-    border-radius:10px;
-    background-color: #15a30b;
-    color: aliceblue;
-    text-align: center;
-    text-decoration: none;
-    font-size: 17px;
-    padding: 12px;
-    width: 7em;
-    opacity: 0;
-    animation: appear 0.5s ease-in 2.5s;
-    animation-fill-mode: forwards;
-    transition: all 0.5s;
-  }
-  
-.but1:hover{
-    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
-  }
-
-#about {
-    scroll-snap-align: start;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color:aliceblue;
-    font-size: 200%;
-    min-height: 100vh;
-    width: 100%;
-    margin-bottom: 50px;
-    scroll-snap-stop: always;
-}
-
-#about div.content{
-    opacity: 0;
-}
-
-#about div.content.trig{
-    color: aliceblue;
-    animation: appear 0.5s 0.3s forwards;
-}
-
-#edu {
-    scroll-snap-align: start;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color:aliceblue;
-    font-size: 200%;
-    min-height: 100vh;
-    width: 100%;
-    scroll-snap-stop: always;
-}
-
-#edu div.content{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    opacity: 0;
-}
-
-#edu div.content.trig{
-    color: aliceblue;
-    animation: appear 0.5s 0.3s forwards;
-}
-
-.eduboxbishops{
-    display: flex;
-    width: 40%;
-    min-width: 350px;
-    height: 90%;
-    flex-direction: column;
-    border: 5px solid aliceblue;
-    border-radius: 10px;
-    margin: 20px;
-    background-image: linear-gradient(rgba(26,25,25,0.5), rgba(26, 25, 25, 0.5)), url("./assets/TBS_Camp.jpeg");
-    background-size: cover;
-}
-
-.eduboxsrm{
-    display: flex;
-    width: 40%;
-    min-width: 350px;
-    height: 90%;
-    flex-direction: column;
-    border: 5px solid aliceblue;
-    border-radius: 10px;
-    margin: 20px;
-    background-image: linear-gradient(rgba(26,25,25,0.5), rgba(26, 25, 25, 0.5)), url("./assets/SRM_Ramapuram.jpg");
-    background-size:cover;
-}
-
-#skills {
-    scroll-snap-align: start;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color:aliceblue;
-    font-size: 200%;
-    min-height: 100vh;
-    width: 100%;
-    margin-bottom: 50px;
-    scroll-snap-stop: always;
-}
-
-#skills div.content{
-    opacity: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    height: 70%;
-    align-items: center;
-}
-
-#skills div.content.trig{
-    color: aliceblue;
-    animation: appear 0.5s 0.3s forwards;
-}
-
-#sklbox{
-    display: flex;
-    border: 5px solid aliceblue;
-    border-radius: 10px;
-    margin: 20px;
-    height: 6em;
-    width: 6em;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-}
-
-.sklJava{
-    background-image: linear-gradient(rgba(16, 15, 15, 0.5), rgba(16, 15, 15, 0.5)), url("./assets/Java_logo.png") ;
-}
-.sklCPP{
-    background-image: linear-gradient(rgba(16,15,15,0.5), rgba(16, 15, 15, 0.5)), url("./assets/C++_Logo.png") ;
-}
-.sklJS{
-    background-image: linear-gradient(rgba(16,15,15,0.5), rgba(16, 15, 15, 0.5)), url("./assets/JavaScript-logo.png") ;
-}
-.sklC{
-    background-image: linear-gradient(rgba(16,15,15,0.5), rgba(16, 15, 15, 0.5)), url("./assets/C_Logo.png") ;
-}
-.sklHTML{
-    background-image: linear-gradient(rgba(16,15,15,0.5), rgba(16, 15, 15, 0.5)), url("./assets/HTML5_Badge.png") ;
-}
-.sklCSS{
-    background-image: linear-gradient(rgba(16,15,15,0.5), rgba(16, 15, 15, 0.5)), url("./assets/CSS3_logo.png") ;
-}
-.sklPy{
-    background-image: linear-gradient(rgba(16,15,15,0.5), rgba(16, 15, 15, 0.0)), url("./assets/Python_Logo.png") ;
-}
-.sklMore{
-    background-image: linear-gradient(rgba(16,15,15,0.5), rgba(16, 15, 15, 0.0));
-}
-
-
-.sklJava:hover {
-    background-image: linear-gradient(rgba(16, 15, 15, 0.3), rgba(16, 15, 15, 0.0)), url("./assets/Java_logo.png") ;
-    color: transparent;
-}
-.sklCPP:hover {
-    background-image: linear-gradient(rgba(16,15,15,0.3), rgba(16, 15, 15, 0.0)), url("./assets/C++_Logo.png") ;
-    color: transparent;
-}
-.sklJS:hover {
-    background-image: linear-gradient(rgba(16,15,15,0.3), rgba(16, 15, 15, 0.0)), url("./assets/JavaScript-logo.png") ;
-    color: transparent;
-}
-.sklC:hover {
-    background-image: linear-gradient(rgba(16,15,15,0.3), rgba(16, 15, 15, 0.0)), url("./assets/C_Logo.png") ;
-    color: transparent;
-}
-.sklHTML:hover {
-    background-image: linear-gradient(rgba(16,15,15,0.3), rgba(16, 15, 15, 0.0)), url("./assets/HTML5_Badge.png") ;
-    color: transparent;
-}
-.sklCSS:hover {
-    background-image: linear-gradient(rgba(16,15,15,0.3), rgba(16, 15, 15, 0.0)), url("./assets/CSS3_logo.png") ;
-    color: transparent;
-}
-.sklPy:hover {
-    background-image: linear-gradient(rgba(16,15,15,0.3), rgba(16, 15, 15, 0.0)), url("./assets/Python_Logo.png") ;
-    color: transparent;
-}
-
-
-#contact { 
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    color:aliceblue;
-    font-size: 200%;
-    height: 100vh;
-    width: 100%;
-}
-
-#contact div.content{
-    display: flex;
-    opacity: 0;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-}
-
-#contact div.content.trig{
-    color: aliceblue;
-    animation: appear 0.5s 0.3s forwards;
-}
-
-#contact a{
-    border-radius:10px;
-    background-color: #15a30b;
-    color: aliceblue;
-    margin-bottom: 20px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 30px;
-    padding: 12px;
-    width: 20em;
-    opacity: 0;
-    animation: appear 1s 1s forwards;
-    transition: all 0.5s;
-}
-
-#contact a:hover{
-    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
-}
-#footer{
-    scroll-snap-align: start;
-    display:flex;
+    position: relative;
     background-color: black;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    color: rgb(104, 107, 110);
-    width: 100%;
-    scroll-snap-stop: always;
+    color: green;
+    font-family: "Source Code Pro", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    border: 10px double green;
+    margin-top: 20px;
+    padding: 20px;
+    height: calc(100vh - (50px + 50px));
+    /* Scanlines */
+    background: linear-gradient(to top, #000000, #000000, #333333, #333333);
+    background-size: cover;
+    background-size: 100% 1px;
+    animation: scanlines infinite 3s linear;
 }
 
-#footer a{
-    border-radius: 10px;
-    border: 2px solid rgb(104, 107, 110);
-    text-align: center;
-    text-decoration: none;
-    width: 25px;
-    height: 25px;
-    transition: 0.5s;
+body::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  animation: flicker 0.25s infinite;
 }
 
-#footer a:hover{
-    border: 2px solid aliceblue;
+nav {
+  position: absolute;
+  top: -25px; 
+  right: 20px;
+  background-color: black; 
+  border-left: 10px double green; 
+  border-right: 10px double green;
+  padding: 5px 10px; 
+
+  background: linear-gradient(to top, #000000, #000000, #333333, #333333);
+  background-size: cover;
+  background-size: 100% 1px;
+  animation: scanlines infinite 3s linear ;
 }
 
-/*animations*/
-
-@keyframes slide{
-    0%{top: -4em}
-    100%{top: 0em}
+ul {
+	list-style: none
 }
 
-@keyframes movegrad {
-    0%{opacity: 1}
-    100%{opacity: 0}
+li{
+  margin-top: 20px;
 }
 
-@keyframes appear {
-	0% {opacity: 0;}
-	100% {opacity: 1;}
+section{
+  display: none;
 }
 
-@keyframes colourchange{
-    0%{color: transparent}
-    100%{color: aliceblue}
+span{
+  color: goldenrod;
+}
+
+.visible{
+  display: block;
+}
+
+.active{
+  background-color: teal;
+  color: black;
+}
+
+.foot{
+  bottom: -33px;
+  position: absolute;
+  right: 20px;
+  background-color: black; 
+  border-left: 10px double green; 
+  border-right: 10px double green;
+  padding: 5px 10px; 
+  font-size:xx-small;
+  
+  background: linear-gradient(to top, #000000, #000000, #333333, #333333);
+  background-size: cover;
+  background-size: 100% 1px;
+  animation: scanlines infinite 4s linear ;
+
+}
+.ascii-hero{
+  font-size: x-large;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.link{
+    text-decoration: underline;
+    color: teal;
+}
+
+.link.active,
+.link:hover{
+    color: black;
+    background-color: teal;
+}
+
+/* Scanline animation */
+@keyframes scanlines {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -10px;
+  }
+}
+
+/* Flicker animation*/
+@keyframes flicker {
+  0% {
+  opacity: 0.27861;
+  }
+  5% {
+  opacity: 0.34769;
+  }
+  10% {
+  opacity: 0.23604;
+  }
+  15% {
+  opacity: 0.90626;
+  }
+  20% {
+  opacity: 0.18128;
+  }
+  25% {
+  opacity: 0.83891;
+  }
+  30% {
+  opacity: 0.65583;
+  }
+  35% {
+  opacity: 0.67807;
+  }
+  40% {
+  opacity: 0.26559;
+  }
+  45% {
+  opacity: 0.84693;
+  }
+  50% {
+  opacity: 0.96019;
+  }
+  55% {
+  opacity: 0.08594;
+  }
+  60% {
+  opacity: 0.20313;
+  }
+  65% {
+  opacity: 0.71988;
+  }
+  70% {
+  opacity: 0.53455;
+  }
+  75% {
+  opacity: 0.37288;
+  }
+  80% {
+  opacity: 0.71428;
+  }
+  85% {
+  opacity: 0.70419;
+  }
+  90% {
+  opacity: 0.7003;
+  }
+  95% {
+  opacity: 0.36108;
+  }
+  100% {
+  opacity: 0.24387;
+  }
 }

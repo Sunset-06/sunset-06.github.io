@@ -3,81 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Figtree">
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="./assets/letter-n.png" type="image/icon type">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <title>Nilay's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./favicons/favicon.ico">
+    <link rel="shortcut icon" href="./favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="./favicons/site.webmanifest" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="scrblock">
+<body>
+    <nav>
+      <a class="link active" href="#home">Home</a>
+      <a class="link" href="#projects">Projects</a>
+      <a class="link" href="#socials">Socials</a>
+    </nav>
 
-  <div class="navbar">
-    <a class="exter" href="assets/Nilay_Resume.pdf"> download my resume</a>
-    <a class="exter" href="https://www.linkedin.com/in/nilay06/" target="_blank" rel="noopener noreferrer"><box-icon name="linkedin-square" type="logo" color="black"></boxicon></a></a>
-    <a class="exter" href="https://github.com/Sunset-06"target="_blank" rel="noopener noreferrer"><box-icon name="github" type="logo" color="black"></boxicon></a>
+    <section id="home" class="visible">
+        <pre class="ascii-hero">
+        <span>
+          _   _ _ _               _____       _           _     
+         | \ | (_) |             /  ___|     | |         (_)    
+         |  \| |_| | __ _ _   _  \ `--.  __ _| |__  _ __  _ ___ 
+         | . ` | | |/ _` | | | |  `--. \/ _` | '_ \| '_ \| / __|
+         | |\  | | | (_| | |_| | /\__/ / (_| | |_) | | | | \__ \
+         \_| \_/_|_|\__,_|\__, | \____/ \__,_|_.__/|_| |_|_|___/
+                           __/ |                                
+                          |___/                                 
+        </span>
+        </pre>
+        <p>Hi! I'm Nilay, a passionate software developer who loves learning new technology, working on new projects, and solving new problems!</p>
+        <p>Welcome to my little corner of the internet.</p>
+        <p>~$ <a class="link" href="assets/Nilay_Resume.pdf">[see my resume]</a></p>
+        <p>Navigate the site using the navbar on the top right.</p>
+    </section>
 
-    <a class="inter" href="#skills">skills</a>
-    <a class="inter" href="#edu">education</a>
-    <a class="inter" href="#about">about</a>
-    <a class="inter" href="#home">home</a>
-  </div>
-
-    <div id="home">
-      <h1>Hello! I'm Nilay</h1>
-      <a class="but1" href="#contact">contact me</a>        
-    </div>
-
-    <div id="about">
-      <h2>about</h2>
-      <div class="content">
-        <p>Hi! I'm Nilay, a passionate student with an interest in software development and a love for learning new technologies, for fun, even if it doesn't have a usecase.</p>
-        <p>Currently, I'm pursuing my bachelors degree at SRMIST Ramapuram. I enjoy working on a diverse range of projects, but am most confident about my skills with Java, C++ and Web Development. I recommend checking out my GitHub and LinkedIn profiles for more information.</p>
-        <p>I am excited to continue learning newer technologies and expanding my skills. While I do that, Let's connect and see what the future has in store for us.</p>
-      </div>
-    </div>
-
-    <div id="edu">
-      <h2>education</h2>
-      <div class="content">
-        <div class="eduboxbishops">
-          <p>The Bishop's School, Camp</p>
-          <p>I completed my Higher Secondary from the Bishop's School, Camp, in Pune and was a student there from 2009 upto 2023.</p>
+    <section id="about">
+      <div>
+        <p>~$ About Me </p>
+        <div>
+          <p>~$ Experience</p>
+          <p>Technical Team  Member at Google Developer Students Club</p>
         </div>
-        <div class="eduboxsrm">
-          <p>SRMIST, Ramapuram</p>
-          <p>I am currently pursuing my Bachelor's degree at SRMIST Ramapuram, and am working on improving myself along with my coursework</p>
+
+        <div>
+          <p>~$ Skills</p>
+          <ul>
+            <li>Programming Languages: Java, C, JavaScript, Python</li>
+          </ul>
         </div>
       </div>
-    </div>
-
-    <div id="skills">
-      <h2>skills</h2>
-      <div class="content">
-        <div id="sklbox" class="sklJava">Java</div>
-        <div id="sklbox" class="sklCPP">C++</div>
-        <div id="sklbox" class="sklJS">JavaScript</div>
-        <div id="sklbox" class="sklC">C</div>
-        <div id="sklbox" class="sklPy">Python</div>
-        <div id="sklbox" class="sklHTML">Frontend</div>
-        <div id="sklbox" class="sklCSS">CSS</div>
-        <div id="sklbox" class="sklMore">Spring-Boot and serverside</div>
-      </div>
-    </div>
-
-    <div id="contact">
-      <h2>get in touch</h2>
-      <div class="content">
-        <p>Contact me through these accounts:</p>
-        <a href="mailto:nilay.sabnis05@gmail.com"><box-icon name="envelope" color="white"></box-icon>nilay.sabnis05@gmail.com</a>
-        <a href="https://www.instagram.com/nilsy_05/"><box-icon name="instagram" type="logo" color="white"></box-icon>@nilsy_05</a>
-      </div>
-    </div>
+    </section>
     
-    <div id="footer">
-      <p>thank you for visiting my site. | © 2024</p>
-      <a href="#"><box-icon name="up-arrow-alt" color="gray"></box-icon></a>
+    <section id="projects">
+    <div>
+      <p>~$ <span>My Projects</span></p>
+      <p>Check out my top three featured projects here:</p>
+      
+      <ul>
+        <li><span>[01] </span><a class="link" href="https://github.com/Sunset-06/Forumeong"target="_blank" rel="noopener noreferrer">[Forumeong]</a>: A mock Forum modeled around older internet forums like old reddit and GameFAQs. Built in Spring-boot and React with Firebase </li>
+        <li><span>[02] </span><a class="link" href="https://github.com/Sunset-06/flake"target="_blank" rel="noopener noreferrer">[flake]</a>: A Chip-8 Interpreter that I made as a way to understand Architecture. Written in C with SDL.</li>
+        <li><span>[03] </span><a class="link" href="https://github.com/Sunset-06/Contactbook"target="_blank" rel="noopener noreferrer">[Contactbook]</a>: My first Full-Stack project, A simple API that stores, retrieves, edits and deletes data in a MongoDB document. Built fully in Express and React.</li>
+      </ul>
+      <br/>
+      <p>I have a lot more that I haven't shown here, please check out my <a class="link" href="https://github.com/Sunset-06"target="_blank" rel="noopener noreferrer">[Github Profile]</a> to see all of the projects that I have worked on.</p>
+      <p>Also check out the <a class="link" href="https://github.com/Sunset-06/Contactbook"target="_blank" rel="noopener noreferrer">[code for this website!]</a></p>
     </div>
+    </section>
+    
+    <section id="socials">
+      <div>
+        <p>~$ <span>Contact me:</span></p>
+        <p>Contact me on whichever platform you want. It'll be nice to hear from you!</p>
+        <p>Check out my Github profile to see my work!</p> 
+        <ul>
+          <li><a class="link" href="mailto:nilay.sabnis05@gmail.com">[nilay.sabnis05@gmail.com]</a></li>
+          <li><a class="link" href="https://www.linkedin.com/in/nilay06/" target="_blank" rel="noopener noreferrer">[LinkedIn]</boxicon></a></li>
+          <li><a class="link" href="https://github.com/Sunset-06"target="_blank" rel="noopener noreferrer">[Github]</boxicon></a></li>
+          <li><a class="link" href="https://www.instagram.com/nilsy_05/">[Instagram]</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <p class="foot">thank you for visiting my site. | © 2025</p>
   <script src="script.js"></script>
-  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body> 
 </html>
