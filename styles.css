@@ -4,7 +4,7 @@ body{
     color: green;
     font-family: "Source Code Pro", serif;
     font-optical-sizing: auto;
-    font-size: 1.7em;
+    font-size: 1.1em;
     font-style: normal;
     border: 10px double green;
     margin-top: 20px;
@@ -121,14 +121,14 @@ span{
 /* Responsiveness */
 @media only screen and (max-width: 1395px) {
   body{
-    font-size: 1.5em;
+    font-size: 1em;
   }
 }
 
 
 @media only screen and (max-width: 1009px) {
   body{
-    font-size: 1.4em;
+    font-size: 0.9em;
   }
   .ascii-hero{
     font-size: 1.4em;
@@ -140,26 +140,26 @@ span{
 
 @media only screen and (max-width: 861px) {
   body{
-    font-size: 1.3em;
+    font-size: 0.8em;
   }
 }
 
 
 @media only screen and (max-width: 661px) {
   body{
-    font-size: 1.2em;
+    font-size: 0.6em;
   }
   .ascii-hero{
-    font-size: 1.2em;
+    font-size: 1.5em;
+  }
+  .foot{
+    font-size: 0.7em;
   }
 }
 
 @media only screen and (max-width: 520px) {
   body{
-    font-size: 1em;
-  }
-  .foot{
-    font-size: 0.7em;
+    font-size: 0.5em;
   }
 }
 
@@ -169,18 +169,16 @@ span{
   }
 }
 
-
-@media only screen and (max-width: 420px) {
-  .ascii-hero{
-    font-size: 0.9em;
-  }
-}
-
 /*For the mighty iPhone SE*/
 @media only screen and (max-width: 420px) {
+  .ascii-hero{
+    font-size: 1.2em;
+  }
+
   .foot{
     right: auto;
     left: 2%;
+    bottom: -23px;
   }
 }
 
