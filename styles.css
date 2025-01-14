@@ -6,6 +6,12 @@ body{
     font-optical-sizing: auto;
     font-size: 1.1em;
     font-style: normal;
+    text-shadow: 
+    0 0 2px rgba(0, 128, 0, 0.4),  
+    0 0 5px rgba(0, 128, 0, 0.5),  
+    0 0 10px rgba(0, 128, 0, 0.7); 
+    filter: blur(0.5px);
+
     border: 10px double green;
     margin-top: 20px;
     padding: 20px;
@@ -15,8 +21,18 @@ body{
     background: linear-gradient(to top, #000000, #000000, #333333, #333333);
     background-size: cover;
     background-size: 100% 1px;
-    animation: scanlines infinite 3s linear;
+    /* Glow */
+    box-shadow: 
+    0 0 2.5px rgba(0, 255, 0, 0.6),   
+    0 0 5px rgba(0, 255, 0, 0.5),  
+    0 0 10px rgba(0, 255, 0, 0.4),  
+    0 0 20px rgba(0, 255, 0, 0.3);  
 }
+@media screen{
+  body {
+    animation: scanlines infinite 55s linear ;
+  }
+} 
 
 body::after {
   content: " ";
@@ -45,7 +61,6 @@ nav {
   background: linear-gradient(to top, #000000, #000000, #333333, #333333);
   background-size: cover;
   background-size: 100% 1px;
-  animation: scanlines infinite 3s linear ;
 }
 
 ul {
@@ -63,6 +78,11 @@ section{
 /* used in headings */
 span{
   color: goldenrod;
+  text-shadow: 
+  0 0 2px rgba(218, 165, 32, 0.4),  
+  0 0 5px rgba(218, 165, 32, 0.5),  
+  0 0 10px rgba(218, 165, 32, 0.7); 
+  
 }
 
 .scroll-content{
@@ -92,7 +112,6 @@ span{
   background: linear-gradient(to top, #000000, #000000, #333333, #333333);
   background-size: cover;
   background-size: 100% 1px;
-  animation: scanlines infinite 4s linear ;
 }
 
 .ascii-hero{
@@ -101,15 +120,13 @@ span{
   align-items:center;
 } 
 
-.header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
 .link{
     text-decoration: underline;
     color: teal;
+    text-shadow: 
+    0 0 2px rgba(0, 128, 128, 0.4),  /* Subtle inner glow */
+    0 0 5px rgba(0, 128, 128, 0.3),  /* Fainter outer glow */
+    0 0 10px rgba(0, 128, 128, 0.2); /* Very faint halo */
 }
 
 .link.active,
@@ -146,39 +163,47 @@ span{
 
 
 @media only screen and (max-width: 661px) {
-  body{
-    font-size: 0.6em;
-  }
   .ascii-hero{
-    font-size: 1.5em;
-  }
-  .foot{
-    font-size: 0.7em;
+    font-size: 1.3em;
   }
 }
 
-@media only screen and (max-width: 520px) {
-  body{
-    font-size: 0.5em;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .ascii-hero{
-    margin-left: -20px;
-  }
-}
-
-/*For the mighty iPhone SE*/
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 580px) {
   .ascii-hero{
     font-size: 1.2em;
   }
+}
 
+
+@media only screen and (max-width: 520px) {
+  .ascii-hero{
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 421px) {
+  .ascii-hero{
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 381px) {
+  .ascii-hero{
+    font-size: 0.8em;
+  }
+}
+
+/*iPhone 5??*/
+@media only screen and (max-width: 321px) {
+  .ascii-hero{
+    font-size: 0.7em;
+  }
+  nav{
+    font-size: 0.8em;
+  }
   .foot{
-    right: auto;
-    left: 2%;
-    bottom: -23px;
+    bottom: -25px;
+    font-size: 0.4em;
   }
 }
 
@@ -188,7 +213,7 @@ span{
     background-position: 0 0;
   }
   to {
-    background-position: 0 -7px;
+    background-position: 0 -10px;
   }
 }
 
