@@ -30,13 +30,10 @@ body{
     0 0 2.5px rgba(0, 255, 0, 0.6),   
     0 0 5px rgba(0, 255, 0, 0.5),  
     0 0 10px rgba(0, 255, 0, 0.4),  
-    0 0 20px rgba(0, 255, 0, 0.3);  
+    0 0 20px rgba(0, 255, 0, 0.3);
+    
+    animation: scanlines infinite 20s linear;  
 }
-@media screen{
-  body {
-    animation: scanlines infinite 20s linear ;
-  }
-} 
 
 body::after {
   content: " ";
@@ -61,10 +58,10 @@ nav {
   border-left: 10px double green; 
   border-right: 10px double green;
   padding: 5px 10px; 
-
-  background: linear-gradient(to top, #000000, #000000, #333333, #333333);
+  background: linear-gradient(to top, #000000, #000000, #272727, #272727);
   background-size: cover;
   background-size: 100% 1px;
+  animation: scanlines infinite 20s linear;
 }
 
 ul {
@@ -112,10 +109,10 @@ span{
   border-right: 10px double green;
   padding: 5px 10px; 
   font-size:0.5em;
-  
-  background: linear-gradient(to top, #000000, #000000, #333333, #333333);
+  background: linear-gradient(to top, #000000, #000000, #272727, #272727);
   background-size: cover;
   background-size: 100% 1px;
+  animation: scanlines infinite 20s linear;
 }
 
 .ascii-hero{
@@ -128,9 +125,9 @@ span{
     text-decoration: underline;
     color: teal;
     text-shadow: 
-    0 0 2px rgba(0, 128, 128, 0.4),  /* Subtle inner glow */
-    0 0 5px rgba(0, 128, 128, 0.3),  /* Fainter outer glow */
-    0 0 10px rgba(0, 128, 128, 0.2); /* Very faint halo */
+    0 0 2px rgba(0, 128, 128, 0.4),  
+    0 0 5px rgba(0, 128, 128, 0.3),  
+    0 0 10px rgba(0, 128, 128, 0.2); 
 }
 
 .link.active,
@@ -143,81 +140,108 @@ span{
 @-moz-document url-prefix() {
   body{
     font-size: 1.1em;
-    background: linear-gradient(to top, #000000, #000000, #333333, #333333); /* Adjust for Firefox */
+    background: linear-gradient(to top, #000000, #000000, #333333, #333333); 
     background-size: cover;
     background-size: 100% 1px;
   }
   .ascii-hero{
     font-size: 1.5em;
   }
+  nav{
+    background: linear-gradient(to top, #000000, #000000, #333333, #333333); 
+    background-size: cover;
+    background-size: 100% 1px;
+  }
+  .foot{
+    background: linear-gradient(to top, #000000, #000000, #333333, #333333); 
+    background-size: cover;
+    background-size: 100% 1px;
+  }
 }
 
 
 /* Responsiveness */
 @media only screen and (max-width: 1395px) {
-  body{
-    font-size: 1em;
-  }
 }
 
 
 @media only screen and (max-width: 1009px) {
   body{
-    font-size: 0.9em;
+    font-size: 1.7em;
   }
   .ascii-hero{
-    font-size: 1.4em;
+    font-size: 0.9em;
   }
   .foot{
     bottom: -30px;
+  }
+  @-moz-document url-prefix(){
+    body{
+      font-size: 1em;
+    } 
   }
 }
 
 @media only screen and (max-width: 861px) {
   body{
-    font-size: 0.8em;
+    font-size: 1.5em;
+  }
+  .ascii-hero{
+    font-size: 0.7em;
+  }
+
+  @-moz-document url-prefix(){
+    body{
+      font-size: 1em;
+    } 
   }
 }
 
 
 @media only screen and (max-width: 661px) {
   .ascii-hero{
-    font-size: 1.3em;
+    font-size: 0.6em;
   }
 }
 
 @media only screen and (max-width: 580px) {
-  .ascii-hero{
-    font-size: 1.2em;
+  body{
+    font-size: 1.4em;
+  }
+  @-moz-document url-prefix(){
+    body{
+      font-size: 1em;
+    } 
   }
 }
 
 
 @media only screen and (max-width: 520px) {
   .ascii-hero{
-    font-size: 1em;
+    font-size: 0.5em;
   }
 }
 
 @media only screen and (max-width: 421px) {
   .ascii-hero{
-    font-size: 0.9em;
+    font-size: 0.4em;
+  }
+  nav{
+    font-size: 0.8em;
   }
 }
 
 @media only screen and (max-width: 381px) {
-  .ascii-hero{
-    font-size: 0.8em;
-  }
+  
 }
 
 /*iPhone 5??*/
 @media only screen and (max-width: 321px) {
-  .ascii-hero{
-    font-size: 0.7em;
+  body{
+    font-size: 1.3em;
   }
-  nav{
-    font-size: 0.8em;
+  .ascii-hero{
+    font-size: 0.37em;
   }
   .foot{
     bottom: -25px;
