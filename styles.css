@@ -1,24 +1,28 @@
+*{
+  -webkit-scrollbar-width: none;
+  scrollbar-width: none;
+}
+
 body{
     position: relative;
     background-color: black;
     color: green;
     font-family: "Source Code Pro", serif;
     font-optical-sizing: auto;
-    font-size: 1.1em;
+    font-size: 1.8em;
     font-style: normal;
     text-shadow: 
     0 0 2px rgba(0, 128, 0, 0.4),  
     0 0 5px rgba(0, 128, 0, 0.5),  
     0 0 10px rgba(0, 128, 0, 0.7); 
     filter: blur(0.5px);
-
     border: 10px double green;
     margin-top: 20px;
     padding: 20px;
     box-sizing: border-box;
     height: calc(100vh - (20px + 20px));
     /* Scanlines */
-    background: linear-gradient(to top, #000000, #000000, #333333, #333333);
+    background: linear-gradient(to top, #000000, #000000, #272727, #272727);
     background-size: cover;
     background-size: 100% 1px;
     /* Glow */
@@ -30,7 +34,7 @@ body{
 }
 @media screen{
   body {
-    animation: scanlines infinite 55s linear ;
+    animation: scanlines infinite 20s linear ;
   }
 } 
 
@@ -115,7 +119,7 @@ span{
 }
 
 .ascii-hero{
-  font-size: 1.5em;
+  font-size: 0.9em;
   display: flex;
   align-items:center;
 } 
@@ -134,6 +138,20 @@ span{
     color: black;
     background-color: teal;
 }
+
+
+@-moz-document url-prefix() {
+  body{
+    font-size: 1.1em;
+    background: linear-gradient(to top, #000000, #000000, #333333, #333333); /* Adjust for Firefox */
+    background-size: cover;
+    background-size: 100% 1px;
+  }
+  .ascii-hero{
+    font-size: 1.5em;
+  }
+}
+
 
 /* Responsiveness */
 @media only screen and (max-width: 1395px) {
