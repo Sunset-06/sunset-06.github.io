@@ -1,3 +1,120 @@
+/*Theme colours*/
+:root {
+  /* Default terminal palette*/
+  --bg-col: #000000;
+  --text-col: #008000;
+  --border-col:#008000;
+  --link-col: #008080;
+  --hero-col: #DAA520;
+  --scanline-col: #272727;
+  --span-shadow: 0 0 2px rgba(218, 165, 32, 0.4),  
+                 0 0 5px rgba(218, 165, 32, 0.5),  
+                 0 0 10px rgba(218, 165, 32, 0.7); 
+  --text-shadow: 0 0 2px rgba(0, 128, 0, 0.4),  
+                 0 0 5px rgba(0, 128, 0, 0.5),  
+                 0 0 10px rgba(0, 128, 0, 0.7);
+  --border-shadow:0 0 2.5px rgba(0, 255, 0, 0.6),   
+                  0 0 5px rgba(0, 255, 0, 0.5),  
+                  0 0 10px rgba(0, 255, 0, 0.4),  
+                  0 0 20px rgba(0, 255, 0, 0.3);
+                  
+}
+
+.cga-pal{
+  --bg-col: #000000;
+  --text-col: #55FFFF;
+  --border-col:#FF55FF;
+  --link-col: #AAAAFF;
+  --hero-col: #FFFFFF;
+  --scanline-col: #272727;
+  --text-shadow: 0 0 2px rgba(85, 255, 255, 0.4),  
+               0 0 5px rgba(85, 255, 255, 0.5),  
+               0 0 10px rgba(85, 255, 255, 0.7);
+  --span-shadow: 0 0 2px rgba(255, 255, 255, 0.4),  
+               0 0 5px rgba(255, 255, 255, 0.5),  
+               0 0 10px rgba(255, 255, 255, 0.7);
+  --border-shadow: 0 0 2px rgba(255, 85, 255, 0.6),  
+                 0 0 5px rgba(255, 85, 255, 0.5),  
+                 0 0 10px rgba(255, 85, 255, 0.4);
+
+}
+
+.apple-2-pal {
+  --bg-col: #002B36; 
+  --text-col: #93A1A1; 
+  --border-col: #839496; 
+  --link-col: #2AA198; 
+  --hero-col: #268BD2; 
+  --scanline-col: #073642;
+  --text-shadow: 0 0 2px rgba(147, 161, 161, 0.4),  
+               0 0 5px rgba(147, 161, 161, 0.5),  
+               0 0 10px rgba(147, 161, 161, 0.7);
+  --span-shadow: 0 0 2px rgba(38, 139, 210, 0.4),  
+               0 0 5px rgba(38, 139, 210, 0.5),  
+               0 0 10px rgba(38, 139, 210, 0.7);
+  --border-shadow: 0 0 2px rgba(131, 148, 150, 0.6),  
+                 0 0 5px rgba(131, 148, 150, 0.5),  
+                 0 0 10px rgba(131, 148, 150, 0.4);
+ 
+}
+
+.amber-pal {
+  --bg-col: #000000; 
+  --text-col: #FF9F00; 
+  --border-col: #FF9F00; 
+  --link-col: #FFCF33; 
+  --hero-col: #FFC400; 
+  --scanline-col: #1A1A1A; --text-shadow: 0 0 2px rgba(255, 159, 0, 0.4),  
+  0 0 5px rgba(255, 159, 0, 0.5),  
+  0 0 10px rgba(255, 159, 0, 0.7);
+  --span-shadow: 0 0 2px rgba(255, 196, 0, 0.4),  
+  0 0 5px rgba(255, 196, 0, 0.5),  
+  0 0 10px rgba(255, 196, 0, 0.7);
+  --border-shadow: 0 0 2px rgba(255, 207, 51, 0.6),  
+    0 0 5px rgba(255, 207, 51, 0.5),  
+    0 0 10px rgba(255, 207, 51, 0.4);
+
+
+}
+
+.cp-pal {  
+  --bg-col: #0b2346; 
+  --text-col: #0ABDC6; 
+  --border-col: #711C91; 
+  --link-col: #FF1493; 
+  --hero-col: #FF4500; 
+  --scanline-col: #1A1A1A;  
+  --text-shadow: 0 0 2px rgba(10, 189, 198, 0.4),  
+                 0 0 5px rgba(10, 189, 198, 0.5),  
+                 0 0 10px rgba(10, 189, 198, 0.7);
+  --span-shadow: 0 0 2px rgba(255, 69, 0, 0.4),  
+                 0 0 5px rgba(255, 69, 0, 0.5),  
+                 0 0 10px rgba(255, 69, 0, 0.7);
+  --border-shadow: 0 0 2px rgba(113, 28, 145, 0.6),  
+                   0 0 5px rgba(113, 28, 145, 0.5),  
+                   0 0 10px rgba(113, 28, 145, 0.4);
+
+}
+
+.sunset-pal {
+  --bg-col: #1A1A2E; 
+  --text-col: #FF6F61; 
+  --border-col: #FF9A76; 
+  --link-col: #F03A47; 
+  --hero-col: #FFD700; 
+  --scanline-col: #282C3A;
+  --text-shadow: 0 0 2px rgba(255, 111, 97, 0.4),  
+                 0 0 5px rgba(255, 111, 97, 0.5),  
+                 0 0 10px rgba(255, 111, 97, 0.7);
+  --span-shadow: 0 0 2px rgba(255, 215, 0, 0.4),  
+                 0 0 5px rgba(255, 215, 0, 0.5),  
+                 0 0 10px rgba(255, 215, 0, 0.7);
+  --border-shadow: 0 0 2px rgba(255, 154, 118, 0.6),  
+                   0 0 5px rgba(255, 154, 118, 0.5),  
+                   0 0 10px rgba(255, 154, 118, 0.4);
+ 
+}
+
 *{
   -webkit-scrollbar-width: none;
   scrollbar-width: none;
@@ -5,33 +122,25 @@
 
 body{
     position: relative;
-    background-color: black;
-    color: green;
+    background-color: var(--bg-col);
+    color: var(--text-col);
     font-family: "Source Code Pro", serif;
     font-optical-sizing: auto;
     font-size: 1.8em;
     font-style: normal;
-    text-shadow: 
-    0 0 2px rgba(0, 128, 0, 0.4),  
-    0 0 5px rgba(0, 128, 0, 0.5),  
-    0 0 10px rgba(0, 128, 0, 0.7); 
+    text-shadow: var(--text-shadow);
     filter: blur(0.5px);
-    border: 10px double green;
+    border: 10px double var(--border-col);
     margin-top: 20px;
     padding: 20px;
     box-sizing: border-box;
     height: calc(100vh - (20px + 20px));
     /* Scanlines */
-    background: linear-gradient(to top, #000000, #000000, #272727, #272727);
+    background: linear-gradient(to top, var(--bg-col), var(--bg-col), var(--scanline-col), var(--scanline-col));
     background-size: cover;
     background-size: 100% 1px;
     /* Glow */
-    box-shadow: 
-    0 0 2.5px rgba(0, 255, 0, 0.6),   
-    0 0 5px rgba(0, 255, 0, 0.5),  
-    0 0 10px rgba(0, 255, 0, 0.4),  
-    0 0 20px rgba(0, 255, 0, 0.3);
-    
+    box-shadow: var(--border-shadow);
     animation: scanlines infinite 20s linear;  
 }
 
@@ -55,10 +164,10 @@ nav {
   top: -25px; 
   right: 20px;
   background-color: black; 
-  border-left: 10px double green; 
-  border-right: 10px double green;
+  border-left: 10px double var(--border-col); 
+  border-right: 10px double var(--border-col);
   padding: 5px 10px; 
-  background: linear-gradient(to top, #000000, #000000, #272727, #272727);
+  background: linear-gradient(to top, var(--bg-col), var(--bg-col), var(--scanline-col), var(--scanline-col));
   background-size: cover;
   background-size: 100% 1px;
   animation: scanlines infinite 20s linear;
@@ -78,12 +187,17 @@ section{
 
 /* used in headings */
 span{
-  color: goldenrod;
-  text-shadow: 
-  0 0 2px rgba(218, 165, 32, 0.4),  
-  0 0 5px rgba(218, 165, 32, 0.5),  
-  0 0 10px rgba(218, 165, 32, 0.7); 
-  
+  color: var(--hero-col);
+  text-shadow: var(--span-shadow)
+}
+
+button{
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.8em;
+  font-family: "Source Code Pro", serif;
+  font-optical-sizing: auto;
 }
 
 .scroll-content{
@@ -96,20 +210,20 @@ span{
 }
 
 .active{
-  background-color: teal;
-  color: black;
+  background-color: var(--link-col);
+  color: var(--bg-col);
 }
 
 .foot{
   bottom: -33px;
   position: absolute;
   right: 20px;
-  background-color: black; 
-  border-left: 10px double green; 
-  border-right: 10px double green;
+  background-color: var(--bg-col); 
+  border-left: 10px double var(--border-col); 
+  border-right: 10px double var(--border-col);
   padding: 5px 10px; 
   font-size:0.5em;
-  background: linear-gradient(to top, #000000, #000000, #272727, #272727);
+  background: linear-gradient(to top, var(--bg-col), var(--bg-col), var(--scanline-col), var(--scanline-col));
   background-size: cover;
   background-size: 100% 1px;
   animation: scanlines infinite 20s linear;
@@ -123,7 +237,7 @@ span{
 
 .link{
     text-decoration: underline;
-    color: teal;
+    color: var(--link-col);
     text-shadow: 
     0 0 2px rgba(0, 128, 128, 0.4),  
     0 0 5px rgba(0, 128, 128, 0.3),  
@@ -132,15 +246,15 @@ span{
 
 .link.active,
 .link:hover{
-    color: black;
-    background-color: teal;
+    color: var(--bg-col);
+    background-color: var(--link-col);
 }
 
 
 @-moz-document url-prefix() {
   body{
     font-size: 1.1em;
-    background: linear-gradient(to top, #000000, #000000, #333333, #333333); 
+    background: linear-gradient(to top, var(--bg-col), var(--bg-col), var(--scanline-col), var(--scanline-col));
     background-size: cover;
     background-size: 100% 1px;
   }
@@ -148,23 +262,18 @@ span{
     font-size: 1.5em;
   }
   nav{
-    background: linear-gradient(to top, #000000, #000000, #333333, #333333); 
+    background: linear-gradient(to top, var(--bg-col), var(--bg-col), var(--scanline-col), var(--scanline-col)); 
     background-size: cover;
     background-size: 100% 1px;
   }
   .foot{
-    background: linear-gradient(to top, #000000, #000000, #333333, #333333); 
+    background: linear-gradient(to top, var(--bg-col), var(--bg-col), var(--scanline-col), var(--scanline-col));
     background-size: cover;
     background-size: 100% 1px;
   }
 }
 
-
 /* Responsiveness */
-@media only screen and (max-width: 1395px) {
-}
-
-
 @media only screen and (max-width: 1009px) {
   body{
     font-size: 1.7em;
