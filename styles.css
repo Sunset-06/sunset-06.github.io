@@ -1,5 +1,5 @@
 /*Theme colours*/
-:root {
+.def-pal{
   /* Default terminal palette*/
   --bg-col: #000000;
   --text-col: #008000;
@@ -64,15 +64,16 @@
   --border-col: #FF9F00; 
   --link-col: #FFCF33; 
   --hero-col: #FFC400; 
-  --scanline-col: #1A1A1A; --text-shadow: 0 0 2px rgba(255, 159, 0, 0.4),  
-  0 0 5px rgba(255, 159, 0, 0.5),  
-  0 0 10px rgba(255, 159, 0, 0.7);
+  --scanline-col: #1A1A1A;
+  --text-shadow: 0 0 2px rgba(255, 159, 0, 0.4),  
+                 0 0 5px rgba(255, 159, 0, 0.5),  
+                 0 0 10px rgba(255, 159, 0, 0.7);
   --span-shadow: 0 0 2px rgba(255, 196, 0, 0.4),  
-  0 0 5px rgba(255, 196, 0, 0.5),  
-  0 0 10px rgba(255, 196, 0, 0.7);
+                 0 0 5px rgba(255, 196, 0, 0.5),  
+                 0 0 10px rgba(255, 196, 0, 0.7);
   --border-shadow: 0 0 2px rgba(255, 207, 51, 0.6),  
-    0 0 5px rgba(255, 207, 51, 0.5),  
-    0 0 10px rgba(255, 207, 51, 0.4);
+                   0 0 5px rgba(255, 207, 51, 0.5),  
+                   0 0 10px rgba(255, 207, 51, 0.4);
 
 
 }
@@ -95,25 +96,24 @@
                    0 0 10px rgba(113, 28, 145, 0.4);
 
 }
-
 .sunset-pal {
-  --bg-col: #1A1A2E; 
-  --text-col: #FF6F61; 
-  --border-col: #FF9A76; 
-  --link-col: #F03A47; 
-  --hero-col: #FFD700; 
-  --scanline-col: #282C3A;
-  --text-shadow: 0 0 2px rgba(255, 111, 97, 0.4),  
-                 0 0 5px rgba(255, 111, 97, 0.5),  
-                 0 0 10px rgba(255, 111, 97, 0.7);
-  --span-shadow: 0 0 2px rgba(255, 215, 0, 0.4),  
-                 0 0 5px rgba(255, 215, 0, 0.5),  
-                 0 0 10px rgba(255, 215, 0, 0.7);
-  --border-shadow: 0 0 2px rgba(255, 154, 118, 0.6),  
-                   0 0 5px rgba(255, 154, 118, 0.5),  
-                   0 0 10px rgba(255, 154, 118, 0.4);
- 
+  --bg-col: #1E1B29; 
+  --text-col: #FF5C5C; 
+  --border-col: #FFA07A;
+  --link-col: #F45D48; 
+  --hero-col: #FFC107; 
+  --scanline-col: #2C2E3A; 
+  --text-shadow: 0 0 2px rgba(255, 92, 92, 0.4),  
+                 0 0 6px rgba(255, 92, 92, 0.6),  
+                 0 0 12px rgba(255, 92, 92, 0.8);
+  --span-shadow: 0 0 2px rgba(255, 193, 7, 0.4),  
+                 0 0 6px rgba(255, 193, 7, 0.6),  
+                 0 0 12px rgba(255, 193, 7, 0.8);
+  --border-shadow: 0 0 2px rgba(255, 160, 122, 0.5),  
+                   0 0 6px rgba(255, 160, 122, 0.6),  
+                   0 0 12px rgba(255, 160, 122, 0.8);
 }
+
 
 *{
   -webkit-scrollbar-width: none;
@@ -137,7 +137,6 @@ body{
     height: calc(100vh - (20px + 20px));
     /* Scanlines */
     background: linear-gradient(to top, var(--bg-col), var(--bg-col), var(--scanline-col), var(--scanline-col));
-    background-size: cover;
     background-size: 100% 1px;
     /* Glow */
     box-shadow: var(--border-shadow);
@@ -338,10 +337,6 @@ button{
   nav{
     font-size: 0.8em;
   }
-}
-
-@media only screen and (max-width: 381px) {
-  
 }
 
 /*iPhone 5??*/

@@ -1,5 +1,10 @@
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("nav a");
+const themeButton = document.getElementById("theme-button");
+const themeName= document.getElementById("theme-name");
+const themes=["def-pal","apple-2-pal","amber-pal","cga-pal","cp-pal","sunset-pal"];
+const names=["Terminal","Apple II","Amber","CGA","Cyberpunk","Sunset"];
+let currTheme=0;
 
 function showSection() {
   //get current section
@@ -27,10 +32,18 @@ function showSection() {
     document.getElementById("home").classList.add("visible");
         const homeLink = document.querySelector(`nav a[href="#home"]`);
         if (homeLink) {
-          homeLink.classList.add("active");
+          homeLink.classList.add("(active");
         }
   }
 }
 
+function themeSwitch(){
+  document.body.classList.remove(themes[currTheme]);  
+  currTheme = (currTheme + 1) % themes.length;
+  document.body.classList.add(themes[currTheme]);
+  themeName.textContent = names[currTheme];
+}
+
+themeButton.addEventListener("click", themeSwitch);
 window.addEventListener("hashchange", showSection);
 showSection();
