@@ -250,28 +250,6 @@ button{
 }
 
 
-@-moz-document url-prefix() {
-  body{
-    font-size: 1.1em;
-    background: linear-gradient(to top, var(--bg-col), var(--bg-col), var(--scanline-col), var(--scanline-col));
-    background-size: cover;
-    background-size: 100% 1px;
-  }
-  .ascii-hero{
-    font-size: 1.5em;
-  }
-  nav{
-    background: linear-gradient(to top, var(--bg-col), var(--bg-col), var(--scanline-col), var(--scanline-col)); 
-    background-size: cover;
-    background-size: 100% 1px;
-  }
-  .foot{
-    background: linear-gradient(to top, var(--bg-col), var(--bg-col), var(--scanline-col), var(--scanline-col));
-    background-size: cover;
-    background-size: 100% 1px;
-  }
-}
-
 /* Responsiveness */
 @media only screen and (max-width: 1009px) {
   body{
@@ -283,11 +261,6 @@ button{
   .foot{
     bottom: -30px;
   }
-  @-moz-document url-prefix(){
-    body{
-      font-size: 1em;
-    } 
-  }
 }
 
 @media only screen and (max-width: 861px) {
@@ -298,11 +271,6 @@ button{
     font-size: 0.7em;
   }
 
-  @-moz-document url-prefix(){
-    body{
-      font-size: 1em;
-    } 
-  }
 }
 
 
@@ -315,11 +283,6 @@ button{
 @media only screen and (max-width: 580px) {
   body{
     font-size: 1.4em;
-  }
-  @-moz-document url-prefix(){
-    body{
-      font-size: 1em;
-    } 
   }
 }
 
