@@ -1,6 +1,5 @@
 /*Theme colours*/
 .def-pal{
-  /* Default terminal palette*/
   --bg-col: #000000;
   --text-col: #008000;
   --border-col:#008000;
@@ -118,7 +117,6 @@
 *{
   -webkit-scrollbar-width: none;
   scrollbar-width: none;
-  background-color: var(--bg-col);
 }
 
 body{
