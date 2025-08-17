@@ -139,7 +139,8 @@ body{
     background-size: 100% 1px;
     /* Glow */
     box-shadow: var(--border-shadow);
-    animation: scanlines infinite 20s linear;  
+    animation: scanlines infinite 20s linear; 
+    cursor: url(./cursors/point.png),  auto; 
 }
 
 body::after {
@@ -240,6 +241,7 @@ button{
     0 0 2px rgba(0, 128, 128, 0.4),  
     0 0 5px rgba(0, 128, 128, 0.3),  
     0 0 10px rgba(0, 128, 128, 0.2); 
+    cursor: url(./cursors/link.png), auto;
 }
 
 .link.active,
