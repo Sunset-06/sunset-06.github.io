@@ -232,8 +232,7 @@ button{
   font-size: 0.9em;
   display: flex;
   align-items:center;
-} 
-
+}
 .link{
     text-decoration: underline;
     color: var(--link-col);
@@ -391,5 +390,26 @@ button{
   }
   100% {
   opacity: 0.24387;
+  }
+}
+
+@supports (-moz-appearance:none) {
+  body, nav, .foot {
+    background-repeat: repeat;
+    background-position: 0 0;
+    background: linear-gradient(to top, var(--bg-col), var(--scanline-col), var(--bg-col));
+    background-size: 100% 12px;
+    animation: firefox-scanlines 3s linear infinite; 
+  }
+}
+
+@supports (-moz-appearance:none) {
+  @keyframes firefox-scanlines {
+    from { 
+      background-position-y: 0; 
+    }
+    to { 
+      background-position-y: 20px; 
+    }
   }
 }
